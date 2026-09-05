@@ -4,57 +4,38 @@ The properties reviews sentiment analysis is a project which is based on natural
 <img width="1400" height="764" alt="image" src="https://github.com/user-attachments/assets/80ae0aa3-2899-4697-839a-805aac7b7618" />
 
 New updations:
-MagicBricks
-     ↓
-BeautifulSoup + Requests
-     ↓
-Property data
-     ↓
-CSV
-     ↓
-Preprocessing
-     ↓
-Cleaned property data
-     ↓
- ┌───────────────────────────┐
- │                           │
- │ Text                      │ Numeric
- │                           │
- │ title                     │ area
- │ location                  │ price
- │ description               │ price/sqft
- │ developer                 │
- │ nearby                    │
- └──────────┬────────────────┘
-            ↓
-          TF-IDF
-            ↓
-      Text → numbers
-            ↓
-     Combine features
-            ↓
-     K-Means clustering
-            ↓
-     Similar properties
-            ↓
-      User enters:
-      location
-      area
-      budget
-            ↓
-    Filter candidates
-            ↓
-    Cosine similarity
-            +
-    location/area preference
-            +
-       cluster match
-            ↓
-    Recommendation score
-            ↓
-       Top properties
-            ↓
-        Flask UI
+
+                  PROPERTY WEBSITES
+                  /              \
+                 /                \
+        Property Listings        Reviews
+              ↓                    ↓
+        Web Scraping           Text Cleaning
+        BeautifulSoup               ↓
+              ↓                  NLP
+        Property Data               ↓
+              ↓              Sentiment Model
+        Preprocessing                ↓
+              ↓             Positive/Negative
+           TF-IDF                    ↓
+              ↓               Sentiment Score
+       Property Features             │
+              ↓                      │
+          K-Means                    │
+              ↓                      │
+        Similar Properties            │
+              \                     /
+               \                   /
+                ↓                 ↓
+             RECOMMENDATION ENGINE
+                     ↓
+              User Preferences
+                     ↓
+               Ranking / Score
+                     ↓
+                  Flask
+                     ↓
+                Web Interface
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/091392bc-8502-416f-9c4f-4de38eab4cb0" />
 
