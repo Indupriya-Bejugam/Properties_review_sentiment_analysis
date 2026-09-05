@@ -55,3 +55,6 @@ Cleaned property data
        Top properties
             ↓
         Flask UI
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/091392bc-8502-416f-9c4f-4de38eab4cb0" />
+
