@@ -1,0 +1,6 @@
+name,location,price,sentiment_score,amenities_score
+Green Residency,Gachibowli,7500000,0.91,0.90
+Lake View Homes,Kondapur,7800000,0.86,0.85
+City Heights,Madhapur,7000000,0.78,0.80
+Sunrise Residency,Gachibowli,6800000,0.88,0.87
+Urban Homes,Kondapur,6500000,0.82,0.84

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Land Lens</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>Land Lens</h1>
+
+        <p class="subtitle">
+            Find properties that match your preferences
+        </p>
+
+
+        <form
+            action="/recommend"
+            method="POST"
+            class="search-form"
+        >
+
+            <label>
+                Preferred Location
+            </label>
+
+            <input
+                type="text"
+                name="location"
+                placeholder="e.g. Maheshwaram"
+            >
+
+
+            <label>
+                Minimum Area (sqft)
+            </label>
+
+            <input
+                type="number"
+                name="min_area"
+                placeholder="e.g. 1500"
+                min="0"
+            >
+
+
+            <label>
+                Maximum Budget (₹ Lakhs)
+            </label>
+
+            <input
+                type="number"
+                name="max_price"
+                placeholder="e.g. 80"
+                min="0"
+            >
+
+
+            <button type="submit">
+                Find Properties
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
